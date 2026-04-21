@@ -43,21 +43,3 @@ def compare_report_numbers(text_version_1, text_version_2):
             print(f"-> Các số có ở Bản 1 nhưng mất/sai ở Bản 2: {missing_in_v2}")
         if missing_in_v1:
             print(f"-> Các số có ở Bản 2 nhưng mất/sai ở Bản 1: {missing_in_v1}")
-
-# ==========================================
-# CHẠY THỬ NGHIỆM (TESTING)
-# ==========================================
-
-# Giả lập copy/paste từ file báo cáo Tiếng Việt
-report_vn = """
-Doanh thu thuần về bán hàng và cung cấp dịch vụ năm 2025 là 15,500,000 VND.
-Chi phí quản lý doanh nghiệp là 2,300,500 VND. Lợi nhuận sau thuế đạt 5,000,000 VND.
-"""
-
-# Giả lập copy/paste từ file báo cáo Tiếng Anh (Cố tình gõ sai số lợi nhuận và thiếu chi phí)
-report_en = """
-Net revenue from sales and services in 2025 is 15,500,000 VND.
-Profit after tax reached 5,000,100 VND.
-"""
-
-compare_report_numbers(report_vn, report_en)
